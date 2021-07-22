@@ -19,6 +19,8 @@ class AddEventPopViewController: UIViewController {
         let endingDate = endingDatePicker.date
         if let title = titleTextField.text{
             self.appDelegate?.scheduleNotification(notificationDetail: title, startDatetime: startingDate, endDateTime: endingDate)
+            self.presentingViewController?.dismiss(animated: true, completion: nil)
+
         }
     }
     
