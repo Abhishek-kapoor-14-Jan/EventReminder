@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         
         self.present(vc, animated: true, completion: nil)
         
+        
         /*let alert = UIAlertController(title: "New Event", message: "Add a new Event", preferredStyle: .alert)
         
         let saveAction = UIAlertAction(title: "Save", style: .default) { [unowned self] action in
