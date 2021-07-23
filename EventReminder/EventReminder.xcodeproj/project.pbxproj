@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		9D5B9FF226A94738007CDCFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B9FF126A94738007CDCFC /* AppDelegate.swift */; };
 		9D5B9FF426A94738007CDCFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B9FF326A94738007CDCFC /* SceneDelegate.swift */; };
-		9D5B9FF626A94738007CDCFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5B9FF526A94738007CDCFC /* ViewController.swift */; };
 		9D5B9FF926A94738007CDCFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5B9FF726A94738007CDCFC /* Main.storyboard */; };
 		9D5B9FFB26A9473F007CDCFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5B9FFA26A9473F007CDCFC /* Assets.xcassets */; };
 		9D5B9FFE26A9473F007CDCFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5B9FFC26A9473F007CDCFC /* LaunchScreen.storyboard */; };
+		9D5BA00726A94F0B007CDCFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5BA00626A94F0B007CDCFC /* ViewController.swift */; };
+		9D5BA00E26A951A3007CDCFC /* EventList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D5BA00C26A951A2007CDCFC /* EventList.xcdatamodeld */; };
+		9D5BA02626A95642007CDCFC /* AddEventPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5BA02526A95642007CDCFC /* AddEventPopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D5B9FEE26A94738007CDCFC /* EventReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5B9FF126A94738007CDCFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D5B9FF326A94738007CDCFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D5B9FF526A94738007CDCFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D5B9FF826A94738007CDCFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D5B9FFA26A9473F007CDCFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D5B9FFD26A9473F007CDCFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D5B9FFF26A9473F007CDCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D5BA00626A94F0B007CDCFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D5BA00D26A951A2007CDCFC /* HitList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HitList.xcdatamodel; sourceTree = "<group>"; };
+		9D5BA02526A95642007CDCFC /* AddEventPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventPopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,12 @@
 			children = (
 				9D5B9FF126A94738007CDCFC /* AppDelegate.swift */,
 				9D5B9FF326A94738007CDCFC /* SceneDelegate.swift */,
-				9D5B9FF526A94738007CDCFC /* ViewController.swift */,
 				9D5B9FF726A94738007CDCFC /* Main.storyboard */,
+				9D5BA02526A95642007CDCFC /* AddEventPopViewController.swift */,
+				9D5BA00626A94F0B007CDCFC /* ViewController.swift */,
 				9D5B9FFA26A9473F007CDCFC /* Assets.xcassets */,
 				9D5B9FFC26A9473F007CDCFC /* LaunchScreen.storyboard */,
+				9D5BA00C26A951A2007CDCFC /* EventList.xcdatamodeld */,
 				9D5B9FFF26A9473F007CDCFC /* Info.plist */,
 			);
 			path = EventReminder;
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5B9FF626A94738007CDCFC /* ViewController.swift in Sources */,
+				9D5BA00726A94F0B007CDCFC /* ViewController.swift in Sources */,
+				9D5BA00E26A951A3007CDCFC /* EventList.xcdatamodeld in Sources */,
 				9D5B9FF226A94738007CDCFC /* AppDelegate.swift in Sources */,
+				9D5BA02626A95642007CDCFC /* AddEventPopViewController.swift in Sources */,
 				9D5B9FF426A94738007CDCFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +347,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D5BA00C26A951A2007CDCFC /* EventList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D5BA00D26A951A2007CDCFC /* HitList.xcdatamodel */,
+			);
+			currentVersion = 9D5BA00D26A951A2007CDCFC /* HitList.xcdatamodel */;
+			path = EventList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9D5B9FE626A94738007CDCFC /* Project object */;
 }
